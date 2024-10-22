@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookActivity"
+    android:orientation="vertical"
+    android:background="#101010">
+
+    <!-- Контейнер для текста и списка -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Надпись над списком -->
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Последние открытые книги"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <!-- RecyclerView с элементами в GridLayout -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/booksList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"
+            android:paddingBottom="20dp"
+            tools:listitem="@layout/items_in_list" />
+    </LinearLayout>
+
+    <!-- Кнопка поверх списка с книгами, выровнена по низу и по центру -->
+    <Button
+        android:id="@+id/addFileBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#3531FF"
+        android:text="Добавить новую книгу" />
+
+</FrameLayout>

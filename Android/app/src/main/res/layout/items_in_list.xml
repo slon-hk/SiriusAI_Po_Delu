@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center">
+
+    <!-- Изображение книги -->
+    <ImageView
+        android:id="@+id/imageBook"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/image" />
+
+    <!-- Название книги -->
+    <TextView
+        android:id="@+id/nameBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="Harry Potter"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:gravity="center" />
+</LinearLayout>

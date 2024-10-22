@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101010"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/SingUpImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleX="1.1"
+        android:scaleY="1.1"
+        app:srcCompat="@drawable/start_page" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/inter_bold"
+        android:text="Добро пожаловать!"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/user_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:bottomLeftRadius="15dp"
+        android:bottomRightRadius="15dp"
+        android:hint="Логин"
+
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:topLeftRadius="15dp"
+        android:topRightRadius="15dp" />
+
+    <EditText
+        android:id="@+id/user_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:bottomLeftRadius="15dp"
+        android:bottomRightRadius="15dp"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:topLeftRadius="15dp"
+        android:topRightRadius="15dp" />
+
+    <TextView
+        android:id="@+id/errorData"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:text="Неверный логин или пароль"
+        android:layout_gravity="center"
+        android:textColor="#FF0000"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:backgroundTint="#3531FF"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:text="Вход"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp" />
+
+    <TextView
+        android:id="@+id/regLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Зарегестрироваться"
+        android:textColor="#7CFFFFFF"
+        android:textSize="15sp" />
+
+</LinearLayout>
